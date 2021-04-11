@@ -4,6 +4,7 @@
 */
 html {
   font-size: 62.5% !important;
+  scroll-behavior: smooth;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -63,27 +64,32 @@ a:hover, a:visited, a:link, a:active {
 
 .container-fluid {
   width: 100%;
+  border: 1px solid green;
 }
 
 .container {
   width: 96%;
   max-width: 100%;
   margin: auto;
+  border: solid red;
   padding: 1rem;
 }
 @media (min-width: 56rem) {
   .container {
+    border: 1px solid purple;
     max-width: 56rem;
     padding: 2rem;
   }
 }
 @media (min-width: 76rem) {
   .container {
+    border: 1px solid orangered;
     max-width: 76rem;
   }
 }
 @media (min-width: 106rem) {
   .container {
+    border: 1px solid blue;
     max-width: 106rem;
   }
 }
@@ -104,7 +110,9 @@ a:hover, a:visited, a:link, a:active {
   flex-direction: column;
   justify-content: center;
   font-size: 1.4rem;
-  line-height: 1.7rem;
+  line-height: 2rem;
+  letter-spacing: 0.05rem;
+  font-weight: 300;
 }
 .profile-info h1 {
   font-size: 2.6rem;
@@ -112,13 +120,118 @@ a:hover, a:visited, a:link, a:active {
   font-weight: 700;
 }
 
-.nav-wrapper {
-  border: 1px solid orange;
+.text-container {
+  width: 100%;
+  margin: 4rem 0;
+}
+@media (min-width: 76rem) {
+  .text-container {
+    width: 76rem;
+  }
+}
+@media (min-width: 106rem) {
+  .text-container {
+    margin: 0 auto;
+  }
+}
+
+.block-img {
+  width: 100%;
+  margin: 5rem 0;
+  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1), 0 5px 15px 0 rgba(0, 0, 0, 0.05);
+}
+.block-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.more-projects-container {
+  border: 5px solid orange;
+  padding: 2rem 0;
+  margin: 3rem 0;
+}
+.container-wide, .card-wrapper {
+  width: 98%;
+  margin: 0 auto;
+}
+@media (min-width: 56rem) {
+  .container-wide, .card-wrapper {
+    width: 80vw;
+    max-width: 106rem;
+    padding: 1rem;
+  }
+}
+.container-wide h1, .card-wrapper h1 {
+  padding-left: 1%;
+}
+
+.card-wrapper {
+  border: 2px solid purple;
   display: flex;
-  padding: 2rem;
+  justify-content: space-between;
+}
+.card-wrapper a {
+  width: 49%;
+}
+
+.project-card-sm {
+  display: flex;
+  width: 100%;
+  height: 10rem;
+  margin: 1rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16), 0 2px 3px rgba(0, 0, 0, 0.23);
+  border-radius: 0.25rem;
+  transition: 0.25s;
+}
+@media (min-width: 56rem) {
+  .project-card-sm {
+    height: 15rem;
+  }
+}
+.project-card-sm h2 {
+  font-size: 1.8rem;
+  font-family: "Yeseva One", cursive;
+  margin-bottom: 1rem;
+}
+.project-card-sm p {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.project-card-sm:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.project-card-img-sm {
+  height: 100%;
+  width: 50%;
+}
+.project-card-img-sm img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+header {
+  padding: 2rem 0;
+}
+
+.nav-wrapper {
+  display: flex;
+  padding: 0 3rem;
   font-size: 1.4rem;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 56rem) {
+  .nav-wrapper {
+    padding: 0 10rem;
+  }
+}
+@media (min-width: 76rem) {
+  .nav-wrapper {
+    padding: 0 15rem;
+  }
 }
 
 nav {
@@ -209,33 +322,82 @@ span:hover:before {
   transition: all 0.5s ease 0s;
 }
 
-.project-card {
+.title-text {
+  font-weight: 700;
+  font-size: 4.4rem;
+  margin-bottom: 2rem;
+}
+
+.body-text {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.03rem;
+}
+
+.section-heading {
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 4rem;
+  color: white;
+}
+.hero-text h1 {
+  font-size: 8rem;
+  font-family: "Yeseva One", cursive;
+}
+.hero-text p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+.section-title {
+  font-size: 2.6rem;
+  font-weight: 100;
+  color: #454545 !important;
+}
+
+.project-card-lg {
   display: flex;
   flex-direction: column;
-  width: 100%;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16), 0 2px 3px rgba(0, 0, 0, 0.23);
   border-radius: 0.25rem;
   transition: 0.25s;
-}
-@media (min-width: 56rem) {
-  .project-card {
-    flex-direction: row;
-  }
-}
-.project-card:hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-.project-card-img {
-  height: 27rem;
   width: 100%;
 }
 @media (min-width: 56rem) {
-  .project-card-img {
+  .project-card-lg {
+    flex-direction: row;
+  }
+}
+.project-card-lg:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.project-card-lg h2 {
+  font-size: 2.4rem;
+  font-family: "Yeseva One", cursive;
+  margin-bottom: 1rem;
+}
+.project-card-lg p {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.project-card-img-lg {
+  height: 30rem;
+  width: 100%;
+}
+@media (min-width: 56rem) {
+  .project-card-img-lg {
     width: 50%;
   }
 }
-.project-card-img img {
+.project-card-img-lg img {
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
   width: 100%;
@@ -249,15 +411,6 @@ span:hover:before {
   justify-content: center;
   padding: 2rem;
   color: #454545;
-}
-.project-card-info h2 {
-  font-size: 2.4rem;
-  font-family: "Yeseva One", cursive;
-  margin-bottom: 1rem;
-}
-.project-card-info p {
-  font-size: 1.2rem;
-  font-weight: 100;
 }
 
 .profile-img {
@@ -282,6 +435,87 @@ span:hover:before {
     width: 33rem;
     height: 33rem;
   }
+}
+
+.hero-wrapper {
+  border: 1px solid red;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.image-left {
+  display: flex;
+  max-width: 76rem;
+  margin: 0 auto;
+  flex-direction: column-reverse;
+}
+.image-left img {
+  width: 80%;
+  margin: 0 auto;
+}
+.image-left div {
+  margin: 2rem 0;
+  width: 100%;
+}
+@media (min-width: 56rem) {
+  .image-left {
+    flex-direction: row;
+  }
+  .image-left img {
+    width: 50%;
+  }
+  .image-left div {
+    margin: 0;
+    width: 50%;
+    padding: 2rem;
+  }
+}
+
+.image-right {
+  display: flex;
+  max-width: 76rem;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.image-right img {
+  width: 80%;
+  margin: 0 auto;
+}
+.image-right div {
+  margin: 2rem 0;
+  width: 100%;
+}
+@media (min-width: 56rem) {
+  .image-right {
+    flex-direction: row;
+  }
+  .image-right img {
+    width: 50%;
+  }
+  .image-right div {
+    margin: 0;
+    width: 50%;
+    padding: 2rem;
+  }
+}
+
+#zion-hero-img {
+  background-image: url("../../assets/images/zion/zion-cover-photo.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#slopes-hero-img {
+  background-image: url("../../assets/images/off-the-slopes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#kebf-hero-img {
+  background-image: url("../../assets/images/studio.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .circle-icon [class*="fa fa-"] {
@@ -326,16 +560,16 @@ span:hover:before {
 }
 
 .bold {
+  text-decoration: none;
+  color: #454545;
   font-weight: 700;
   font-size: 1.8rem;
 }
 
 .light {
+  text-decoration: none;
+  color: #454545;
   font-weight: 300;
-}
-
-#about-me {
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16), 0 2px 3px rgba(0, 0, 0, 0.23);
 }
 
 #skills {

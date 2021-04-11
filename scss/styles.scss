@@ -4,6 +4,7 @@
 @import "header";
 @import "container";
 @import "navigation";
+@import "typography";
 @import "card";
 @import "images";
 @import "icons";
@@ -15,16 +16,18 @@
 }
 
 .bold {
+    text-decoration: none;
+    color: $font-color;
     @include bold;
     font-size: 1.8rem;
 }
 .light {
+    text-decoration: none;
+    color: $font-color;
     @include light;
 }
 
-#about-me {
-    box-shadow: $shadow;
-}
+
 
 #skills {
     background-color: $background-color;
