@@ -1,0 +1,53 @@
+.container-fluid {
+    width: 100%;
+    // border: 1px solid green;
+}
+
+.container {
+    width: 96%;
+    max-width: 100%;
+    margin: auto;
+    // border: solid red;
+    padding: 1rem;
+    @include tablet {
+        // border: 1px solid purple;
+        max-width: $tablet;
+        padding: 2rem;
+    }
+    @include laptop {
+        // border: 1px solid orangered; 
+        max-width: $laptop;
+    }
+    @include desktop {
+        // border: 1px solid blue;
+        max-width: $desktop;
+    }
+}
+
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    @include tablet {
+        flex-direction: row;
+
+    }
+}
+
+
+.profile-info {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    h1 {
+        font-size: 2.6rem;
+        margin-bottom: 2rem;
+        @include bold;
+    }
+}
+

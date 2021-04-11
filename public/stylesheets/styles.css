@@ -1,0 +1,271 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html {
+  font-size: 62.5% !important;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Inter", sans-serif;
+  color: #454545;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  width: 96%;
+  max-width: 100%;
+  margin: auto;
+  padding: 1rem;
+}
+@media (min-width: 56rem) {
+  .container {
+    max-width: 56rem;
+    padding: 2rem;
+  }
+}
+@media (min-width: 76rem) {
+  .container {
+    max-width: 76rem;
+  }
+}
+@media (min-width: 106rem) {
+  .container {
+    max-width: 106rem;
+  }
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 56rem) {
+  .profile-container {
+    flex-direction: row;
+  }
+}
+
+.profile-info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+.profile-info h1 {
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.nav-wrapper {
+  border: 1px solid orange;
+  display: flex;
+  padding: 2rem;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+}
+nav a {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-decoration: none;
+  color: #454545;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16), 0 2px 3px rgba(0, 0, 0, 0.23);
+  border-radius: 0.25rem;
+  transition: 0.25s;
+}
+@media (min-width: 56rem) {
+  .project-card {
+    flex-direction: row;
+  }
+}
+.project-card:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.project-card-img {
+  height: 27rem;
+  width: 100%;
+}
+@media (min-width: 56rem) {
+  .project-card-img {
+    width: 50%;
+  }
+}
+.project-card-img img {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  color: #454545;
+}
+.project-card-info h2 {
+  font-size: 2.4rem;
+  font-family: "Yeseva One", cursive;
+  margin-bottom: 1rem;
+}
+.project-card-info p {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.profile-img {
+  height: 100%;
+}
+.profile-img img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+@media (min-width: 56rem) {
+  .profile-img img {
+    width: 22rem;
+    height: 22rem;
+    margin: 0;
+  }
+}
+@media (min-width: 76rem) {
+  .profile-img img {
+    width: 33rem;
+    height: 33rem;
+  }
+}
+
+.circle-icon [class*="fa fa-"] {
+  background-color: #348BF4;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  margin: auto 3px;
+  width: 40px;
+  font-size: 18px;
+  text-align: center;
+  transition: 0.25s;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon-column {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.icon-row {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+.icon-row p {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  font-weight: 300;
+}
+
+.section-title {
+  font-size: 2.6rem;
+  font-weight: 100;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.light {
+  font-weight: 300;
+}
+
+#about-me {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16), 0 2px 3px rgba(0, 0, 0, 0.23);
+}
+
+#skills {
+  background-color: #fbfbfb;
+}
+
+#recent-work {
+  background-color: #fbfbfb;
+}
+
+/*# sourceMappingURL=styles.css.map */

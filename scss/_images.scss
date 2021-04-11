@@ -1,0 +1,19 @@
+.profile-img {
+    height: 100%;
+    img {            
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        @include tablet {
+            width: 22rem;
+            height: 22rem;
+            margin: 0;
+        }
+        @include laptop {
+            width: 33rem;
+            height: 33rem;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "header";
+@import "container";
+@import "navigation";
+@import "card";
+@import "images";
+@import "icons";
+
+
+.section-title {
+    font-size: 2.6rem;
+    @include thin;
+}
+
+.bold {
+    @include bold;
+    font-size: 1.8rem;
+}
+.light {
+    @include light;
+}
+
+#about-me {
+    box-shadow: $shadow;
+}
+
+#skills {
+    background-color: $background-color;
+}
+
+#recent-work {
+    background-color: $background-color;
+}
