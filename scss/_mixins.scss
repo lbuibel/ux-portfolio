@@ -20,6 +20,10 @@
     font-weight: 700;
 }
 
+@mixin semibold {
+    font-weight: 600;
+}
+
 @mixin light {
     font-weight: 300;
 }
@@ -35,7 +39,7 @@
 @mixin image-text-block {
     display: flex;
     max-width: $laptop;
-    margin: 0 auto;
+    margin: 2rem auto;
     img {
         width: 80%;
         margin: 0 auto;

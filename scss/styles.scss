@@ -8,6 +8,7 @@
 @import "card";
 @import "images";
 @import "icons";
+@import "footer";
 
 
 .section-title {
@@ -29,10 +30,11 @@
 
 
 
-#skills {
-    background-color: $background-color;
-}
+// #skills {
+//     background-color: $background-color;
+// }
 
 #recent-work {
+    padding: 3rem 0;
     background-color: $background-color;
 }

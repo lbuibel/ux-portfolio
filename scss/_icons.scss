@@ -3,24 +3,30 @@
     border-radius: 50%;
     color: #fff;
     display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    margin: auto 3px;
-    width: 40px;
-    font-size: 18px;
+    height: 4rem;
+    line-height: 4rem;
+    margin: auto .3rem;
+    width: 4rem;
+    font-size: 1.8rem;
     text-align: center;
     transition: .25s;
 }
 
 .icon-wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    @include tablet {
+        justify-content: space-evenly;
+    }
 }
 
 .icon-column {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
+    @include tablet {
+        width: 40%;
+    }
 }
 
 .icon-row {
@@ -31,5 +37,18 @@
         font-size: 1.4rem;
         margin-left: 1rem;
         @include light;
+    }
+}
+
+.social-icons {
+    font-size: 4rem;
+    i {
+        margin: 3rem;
+        text-decoration: none;
+        color: $font-color;
+        transition: .25s;
+        &:hover {
+            color: $primary-color;
+        }
     }
 }

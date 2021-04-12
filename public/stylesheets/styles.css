@@ -64,32 +64,28 @@ a:hover, a:visited, a:link, a:active {
 
 .container-fluid {
   width: 100%;
-  border: 1px solid green;
+  margin-bottom: 2rem;
 }
 
 .container {
   width: 96%;
   max-width: 100%;
-  margin: auto;
-  border: solid red;
+  margin: 0 auto;
   padding: 1rem;
 }
 @media (min-width: 56rem) {
   .container {
-    border: 1px solid purple;
     max-width: 56rem;
     padding: 2rem;
   }
 }
 @media (min-width: 76rem) {
   .container {
-    border: 1px solid orangered;
     max-width: 76rem;
   }
 }
 @media (min-width: 106rem) {
   .container {
-    border: 1px solid blue;
     max-width: 106rem;
   }
 }
@@ -146,28 +142,26 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .more-projects-container {
-  border: 5px solid orange;
-  padding: 2rem 0;
-  margin: 3rem 0;
+  padding: 7rem 0;
+  margin-top: 3rem;
 }
 .container-wide, .card-wrapper {
-  width: 98%;
+  width: 96%;
   margin: 0 auto;
 }
 @media (min-width: 56rem) {
   .container-wide, .card-wrapper {
     width: 80vw;
     max-width: 106rem;
-    padding: 1rem;
   }
 }
 .container-wide h1, .card-wrapper h1 {
-  padding-left: 1%;
+  margin-bottom: 2.2rem;
 }
 
 .card-wrapper {
-  border: 2px solid purple;
   display: flex;
+  margin: 1rem auto;
   justify-content: space-between;
 }
 .card-wrapper a {
@@ -178,7 +172,6 @@ a:hover, a:visited, a:link, a:active {
   display: flex;
   width: 100%;
   height: 10rem;
-  margin: 1rem;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16), 0 2px 3px rgba(0, 0, 0, 0.23);
   border-radius: 0.25rem;
   transition: 0.25s;
@@ -212,8 +205,24 @@ a:hover, a:visited, a:link, a:active {
   border-bottom-left-radius: 0.25rem;
 }
 
+.border {
+  width: 100%;
+  border-top: 2px solid #b7b7b7;
+}
+
+.social-container {
+  text-align: center;
+  margin: 6rem auto;
+  padding: 3rem 0 2rem 0;
+}
+.social-container h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
 header {
   padding: 2rem 0;
+  margin-bottom: 0 !important;
 }
 
 .nav-wrapper {
@@ -329,7 +338,7 @@ span:hover:before {
 }
 
 .body-text {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 2rem;
   letter-spacing: 0.03rem;
 }
@@ -438,7 +447,6 @@ span:hover:before {
 }
 
 .hero-wrapper {
-  border: 1px solid red;
   width: 100%;
   height: 80vh;
   position: relative;
@@ -447,7 +455,7 @@ span:hover:before {
 .image-left {
   display: flex;
   max-width: 76rem;
-  margin: 0 auto;
+  margin: 2rem auto;
   flex-direction: column-reverse;
 }
 .image-left img {
@@ -475,7 +483,7 @@ span:hover:before {
 .image-right {
   display: flex;
   max-width: 76rem;
-  margin: 0 auto;
+  margin: 2rem auto;
   flex-direction: column;
 }
 .image-right img {
@@ -523,24 +531,34 @@ span:hover:before {
   border-radius: 50%;
   color: #fff;
   display: inline-block;
-  height: 40px;
-  line-height: 40px;
-  margin: auto 3px;
-  width: 40px;
-  font-size: 18px;
+  height: 4rem;
+  line-height: 4rem;
+  margin: auto 0.3rem;
+  width: 4rem;
+  font-size: 1.8rem;
   text-align: center;
   transition: 0.25s;
 }
 
 .icon-wrapper {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+@media (min-width: 56rem) {
+  .icon-wrapper {
+    justify-content: space-evenly;
+  }
 }
 
 .icon-column {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 50%;
+}
+@media (min-width: 56rem) {
+  .icon-column {
+    width: 40%;
+  }
 }
 
 .icon-row {
@@ -552,6 +570,34 @@ span:hover:before {
   font-size: 1.4rem;
   margin-left: 1rem;
   font-weight: 300;
+}
+
+.social-icons {
+  font-size: 4rem;
+}
+.social-icons i {
+  margin: 3rem;
+  text-decoration: none;
+  color: #454545;
+  transition: 0.25s;
+}
+.social-icons i:hover {
+  color: #348BF4;
+}
+
+footer {
+  background-color: #a2a2a2;
+  text-align: center;
+  margin-bottom: 0 !important;
+  max-width: 100%;
+  padding: 1.2rem 0 1.2rem 0;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .section-title {
@@ -572,11 +618,8 @@ span:hover:before {
   font-weight: 300;
 }
 
-#skills {
-  background-color: #fbfbfb;
-}
-
 #recent-work {
+  padding: 3rem 0;
   background-color: #fbfbfb;
 }
 

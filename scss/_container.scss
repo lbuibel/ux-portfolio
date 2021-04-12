@@ -1,25 +1,26 @@
 .container-fluid {
     width: 100%;
-    border: 1px solid green;
+    // border: 1px solid green;
+    margin-bottom: 2rem;
 }
 
 .container {
     width: 96%;
     max-width: 100%;
-    margin: auto;
-    border: solid red;
+    margin: 0 auto;
+    // border: solid red;
     padding: 1rem;
     @include tablet {
-        border: 1px solid purple;
+        // border: 1px solid purple;
         max-width: $tablet;
         padding: 2rem;
     }
     @include laptop {
-        border: 1px solid orangered; 
+        // border: 1px solid orangered; 
         max-width: $laptop;
     }
     @include desktop {
-        border: 1px solid blue;
+        // border: 1px solid blue;
         max-width: $desktop;
     }
 }
@@ -28,8 +29,6 @@
 .profile-container {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
     @include tablet {
         flex-direction: row;
 
@@ -75,30 +74,31 @@
 }
 
 .more-projects-container {
-    border: 5px solid orange;
-    padding: 2rem 0;
-    margin: 3rem 0;
+    // border: 5px solid orange;
+    padding: 7rem 0;
+    margin-top: 3rem;
     @include tablet {
     }
 }
 
 .container-wide {
-    width: 98%;
+    width: 96%;
     margin: 0 auto;
     @include tablet {
         width: 80vw;
         max-width: $desktop;
-        padding: 1rem;
+        // padding: 1rem;
     }
     h1 {
-        padding-left: 1%;
+        margin-bottom: 2.2rem;
     }
 }
 
 .card-wrapper {
     @extend .container-wide;
-    border: 2px solid purple;
+    // border: 2px solid purple;
     display: flex;
+    margin: 1rem auto;
     justify-content: space-between;
     a {
         width: 49%;
@@ -110,7 +110,7 @@
     width: 100%;
     height: 10rem;
     // border: 2px solid red;
-    margin: 1rem;
+    // margin: 1rem;
     @include tablet {
         height: 15rem;
     }
@@ -139,5 +139,20 @@
         height: 100%;
         border-top-left-radius: $card-border-radius;
         border-bottom-left-radius: $card-border-radius;
+    }
+}
+
+.border {
+    width: 100%;
+    border-top: 2px solid rgb(183, 183, 183);
+}
+
+.social-container {
+    text-align: center;
+    margin: 6rem auto;
+    padding: 3rem 0 2rem 0;
+    h2 {
+        font-size: 2.4rem;
+        @include semibold;
     }
 }
