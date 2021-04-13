@@ -8,7 +8,7 @@
         margin-bottom: 1rem; 
     }
     p {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         @include thin;
     }
 }
@@ -43,10 +43,7 @@
     display: flex;
     width: 100%;
     height: 10rem;
-    // border: 2px solid red;
-    // margin: 1rem;
     transition: all .2s ease-in-out;
-
     @include tablet {
         height: 15rem;
     }
@@ -56,7 +53,7 @@
         margin-bottom: 1rem; 
     }
     p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         @include thin;
     }
     box-shadow: $shadow;
