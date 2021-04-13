@@ -11,8 +11,7 @@
 	<link href="public/stylesheets/styles.css" rel="stylesheet">  
 </head>
 
-<body>
-
+<body class="loading">
 
 	<main>
 
@@ -84,9 +83,9 @@
 		<!-- Recent Work-->
 		<section id="recent-work" class="container-fluid">
 			<div class="container">
-				<h1 class="section-title">Recent Work</h1>
+				<h1 id="trigger-2" class="section-title">Recent Work</h1>
 			</div>
-			<div class="container">
+			<div class="container" id="zion-card">
 				<a href="zion.html">
 					<div class="project-card-lg">
 						<div class="project-card-img-lg">
@@ -94,13 +93,13 @@
 						</div>
 						<div class="project-card-info">
 							<h2>National Park App</h2>
-							<p>National park app sub text here</p>
+							<p>App Design / Prototyping</p>
 						</div>
 					</div>
 				</a>
 			</div>
 
-			<div class="container">
+			<div class="container" id="slope-card">
 				<a href="off-the-slopes.html">
 					<div class="project-card-lg">
 						<div class="project-card-img-lg">
@@ -108,13 +107,13 @@
 						</div>
 						<div class="project-card-info">
 							<h2>Off The Slopes</h2>
-							<p>Off The Slopessub text here</p>
+							<p>Digital Output / Design / Research</p>
 						</div>
 					</div>
 				</a>
 			</div>
 
-			<div class="container">
+			<div class="container" id="kebf-card">
 				<a href="kebf.html">
 					<div class="project-card-lg">
 						<div class="project-card-img-lg">
@@ -122,7 +121,7 @@
 						</div>
 						<div class="project-card-info">
 							<h2>Sojourn</h2>
-							<p>Sojourn text here</p>
+							<p>Web Design / Branding / Development</p>
 						</div>
 					</div>
 				</a>
@@ -146,5 +145,11 @@
 		<a href="https://github.com/lbuibel/ux-portfolio" target="_blank">Built By Logan Uibel | 2021</a>
 	</footer>
 
+	<script type="text/javascript" src="js/gsap.min.js"></script>
+	<script type="text/javascript" src="js/ScrollMagic.js"></script>
+	<script type="text/javascript" src="js/animation.gsap.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js" integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A==" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/cardAnimations.js"></script>
 </body>
+
 </html>

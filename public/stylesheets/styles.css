@@ -68,7 +68,7 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .container {
-  width: 96%;
+  width: 94%;
   max-width: 100%;
   margin: 0 auto;
   padding: 1rem;
@@ -159,52 +159,6 @@ a:hover, a:visited, a:link, a:active {
   margin-bottom: 2.2rem;
 }
 
-.card-wrapper {
-  display: flex;
-  margin: 1rem auto;
-  justify-content: space-between;
-}
-.card-wrapper a {
-  width: 49%;
-}
-
-.project-card-sm {
-  display: flex;
-  width: 100%;
-  height: 10rem;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16), 0 2px 3px rgba(0, 0, 0, 0.23);
-  border-radius: 0.25rem;
-  transition: 0.25s;
-}
-@media (min-width: 56rem) {
-  .project-card-sm {
-    height: 15rem;
-  }
-}
-.project-card-sm h2 {
-  font-size: 1.8rem;
-  font-family: "Yeseva One", cursive;
-  margin-bottom: 1rem;
-}
-.project-card-sm p {
-  font-size: 1.2rem;
-  font-weight: 100;
-}
-.project-card-sm:hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-.project-card-img-sm {
-  height: 100%;
-  width: 50%;
-}
-.project-card-img-sm img {
-  width: 100%;
-  height: 100%;
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
-}
-
 .border {
   width: 100%;
   border-top: 2px solid #b7b7b7;
@@ -247,10 +201,16 @@ nav {
   display: flex;
 }
 nav a {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 1rem;
+  margin-right: 0;
   text-decoration: none;
   color: #454545;
+}
+@media (min-width: 56rem) {
+  nav a {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 
 span {
@@ -333,8 +293,13 @@ span:hover:before {
 
 .title-text {
   font-weight: 700;
-  font-size: 4.4rem;
+  font-size: 3.6rem;
   margin-bottom: 2rem;
+}
+@media (min-width: 56rem) {
+  .title-text {
+    font-size: 4.4;
+  }
 }
 
 .body-text {
@@ -345,8 +310,13 @@ span:hover:before {
 
 .section-heading {
   font-weight: 700;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   margin-bottom: 2rem;
+}
+@media (min-width: 56rem) {
+  .section-heading {
+    font-size: 3.2;
+  }
 }
 
 .hero-text {
@@ -356,8 +326,13 @@ span:hover:before {
   color: white;
 }
 .hero-text h1 {
-  font-size: 8rem;
+  font-size: 6rem;
   font-family: "Yeseva One", cursive;
+}
+@media (min-width: 56rem) {
+  .hero-text h1 {
+    font-size: 8rem;
+  }
 }
 .hero-text p {
   font-size: 1.8rem;
@@ -372,12 +347,13 @@ span:hover:before {
 }
 
 .project-card-lg {
+  background-color: white;
   display: flex;
   flex-direction: column;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16), 0 2px 3px rgba(0, 0, 0, 0.23);
   border-radius: 0.25rem;
-  transition: 0.25s;
   width: 100%;
+  transition: ease-in-out 0.25s;
 }
 @media (min-width: 56rem) {
   .project-card-lg {
@@ -386,9 +362,10 @@ span:hover:before {
 }
 .project-card-lg:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: scale(1.01);
 }
 .project-card-lg h2 {
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   font-family: "Yeseva One", cursive;
   margin-bottom: 1rem;
 }
@@ -412,6 +389,7 @@ span:hover:before {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  min-width: 28rem;
 }
 
 .project-card-info {
@@ -420,6 +398,55 @@ span:hover:before {
   justify-content: center;
   padding: 2rem;
   color: #454545;
+}
+
+.card-wrapper {
+  display: flex;
+  margin: 1rem auto;
+  justify-content: space-between;
+}
+.card-wrapper a {
+  width: 49%;
+}
+
+.project-card-sm {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  height: 10rem;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16), 0 2px 3px rgba(0, 0, 0, 0.23);
+  border-radius: 0.25rem;
+  transition: 0.25s;
+}
+@media (min-width: 56rem) {
+  .project-card-sm {
+    height: 15rem;
+  }
+}
+.project-card-sm h2 {
+  font-size: 1.8rem;
+  font-family: "Yeseva One", cursive;
+  margin-bottom: 1rem;
+}
+.project-card-sm p {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.project-card-sm:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: scale(1.01);
+}
+
+.project-card-img-sm {
+  height: 100%;
+  width: 50%;
+}
+.project-card-img-sm img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
 }
 
 .profile-img {
