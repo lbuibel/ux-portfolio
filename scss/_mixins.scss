@@ -53,8 +53,8 @@
         flex-direction: row;
         img {
             width: 50%;
-            object-fit: cover;
-            max-height: 100vh;
+            object-fit: contain;
+            height: 100%;
         }
         div {
             margin: 0;

@@ -529,8 +529,8 @@ span:hover:before {
   }
   .image-left img {
     width: 50%;
-    object-fit: cover;
-    max-height: 100vh;
+    object-fit: contain;
+    height: 100%;
   }
   .image-left div {
     margin: 0;
@@ -560,8 +560,8 @@ span:hover:before {
   }
   .image-right img {
     width: 50%;
-    object-fit: cover;
-    max-height: 100vh;
+    object-fit: contain;
+    height: 100%;
   }
   .image-right div {
     margin: 0;
