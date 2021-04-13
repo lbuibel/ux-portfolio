@@ -40,6 +40,7 @@
     display: flex;
     max-width: $laptop;
     margin: 2rem auto;
+    border: 2px solid red;
     img {
         width: 80%;
         margin: 0 auto;
@@ -52,6 +53,8 @@
         flex-direction: row;
         img {
             width: 50%;
+            object-fit: cover;
+            max-height: 100vh;
         }
         div {
             margin: 0;

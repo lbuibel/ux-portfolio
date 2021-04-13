@@ -512,6 +512,7 @@ span:hover:before {
   display: flex;
   max-width: 76rem;
   margin: 2rem auto;
+  border: 2px solid red;
   flex-direction: column-reverse;
 }
 .image-left img {
@@ -528,6 +529,8 @@ span:hover:before {
   }
   .image-left img {
     width: 50%;
+    object-fit: cover;
+    max-height: 100vh;
   }
   .image-left div {
     margin: 0;
@@ -540,6 +543,7 @@ span:hover:before {
   display: flex;
   max-width: 76rem;
   margin: 2rem auto;
+  border: 2px solid red;
   flex-direction: column;
 }
 .image-right img {
@@ -556,6 +560,8 @@ span:hover:before {
   }
   .image-right img {
     width: 50%;
+    object-fit: cover;
+    max-height: 100vh;
   }
   .image-right div {
     margin: 0;
