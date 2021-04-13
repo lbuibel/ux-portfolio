@@ -352,6 +352,7 @@ span:hover:before {
 }
 
 .project-card-lg {
+  margin-bottom: 1rem;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -368,6 +369,7 @@ span:hover:before {
 .project-card-lg:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   transform: scale(1.01);
+  margin-bottom: 1rem;
 }
 .project-card-lg h2 {
   font-size: 3.2rem;
@@ -380,7 +382,7 @@ span:hover:before {
 }
 
 .project-card-img-lg {
-  height: 30rem;
+  height: 40rem;
   width: 100%;
 }
 @media (min-width: 56rem) {
@@ -395,6 +397,11 @@ span:hover:before {
   height: 100%;
   object-fit: cover;
   min-width: 28rem;
+}
+@media (min-width: 56rem) {
+  .project-card-img-lg {
+    height: 30rem;
+  }
 }
 
 .project-card-info {
@@ -417,8 +424,8 @@ span:hover:before {
 .project-card-sm {
   background-color: white;
   display: flex;
-  width: 100%;
-  height: 10rem;
+  width: 96%;
+  height: 8rem;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16), 0 2px 3px rgba(0, 0, 0, 0.23);
   border-radius: 0.25rem;
@@ -426,17 +433,29 @@ span:hover:before {
 }
 @media (min-width: 56rem) {
   .project-card-sm {
-    height: 15rem;
+    height: 16rem;
+    width: 100%;
   }
 }
 .project-card-sm h2 {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-family: "Yeseva One", cursive;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 56rem) {
+  .project-card-sm h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
 }
 .project-card-sm p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 100;
+}
+@media (min-width: 56rem) {
+  .project-card-sm p {
+    font-size: 1.4rem;
+  }
 }
 .project-card-sm:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -446,10 +465,12 @@ span:hover:before {
 .project-card-img-sm {
   height: 100%;
   width: 50%;
+  min-width: 50%;
 }
 .project-card-img-sm img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
 }
@@ -619,7 +640,7 @@ span:hover:before {
 }
 
 footer {
-  background-color: #a2a2a2;
+  background-color: #454545;
   text-align: center;
   margin-bottom: 0 !important;
   max-width: 100%;
