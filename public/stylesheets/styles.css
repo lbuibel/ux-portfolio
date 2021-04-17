@@ -73,9 +73,9 @@ a:hover, a:visited, a:link, a:active {
   margin: 0 auto;
   padding: 1rem;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .container {
-    max-width: 56rem;
+    max-width: 62rem;
     padding: 2rem;
   }
 }
@@ -94,7 +94,7 @@ a:hover, a:visited, a:link, a:active {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .profile-container {
     flex-direction: row;
   }
@@ -115,7 +115,7 @@ a:hover, a:visited, a:link, a:active {
   margin-bottom: 2rem;
   font-weight: 700;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .profile-info {
     padding: 2rem;
   }
@@ -154,7 +154,7 @@ a:hover, a:visited, a:link, a:active {
   width: 96%;
   margin: 0 auto;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .container-wide, .card-wrapper {
     width: 80vw;
     max-width: 106rem;
@@ -191,7 +191,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .nav-wrapper {
     padding: 0 10rem;
   }
@@ -211,7 +211,7 @@ nav a {
   text-decoration: none;
   color: #454545;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   nav a {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -302,7 +302,7 @@ span:hover:before {
   margin-bottom: 1rem;
   margin-top: 7rem;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .title-text {
     font-size: 4.4;
   }
@@ -319,7 +319,7 @@ span:hover:before {
   font-size: 2.4rem;
   margin-bottom: 2rem;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .section-heading {
     font-size: 3.2;
   }
@@ -331,7 +331,7 @@ span:hover:before {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .section-subheading {
     font-size: 1.8;
   }
@@ -347,7 +347,7 @@ span:hover:before {
   font-size: 6rem;
   font-family: "Yeseva One", cursive;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .hero-text h1 {
     font-size: 8rem;
   }
@@ -371,6 +371,10 @@ span:hover:before {
   text-transform: uppercase;
 }
 
+a {
+  color: #454545;
+}
+
 .project-card-lg {
   margin-bottom: 1rem;
   background-color: white;
@@ -381,7 +385,7 @@ span:hover:before {
   width: 100%;
   transition: ease-in-out 0.25s;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .project-card-lg {
     flex-direction: row;
   }
@@ -405,7 +409,7 @@ span:hover:before {
   height: 40rem;
   width: 100%;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .project-card-img-lg {
     width: 50%;
     max-height: 40vh;
@@ -419,7 +423,7 @@ span:hover:before {
   object-fit: cover;
   min-width: 28rem;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .project-card-img-lg {
     height: 30rem;
   }
@@ -452,7 +456,7 @@ span:hover:before {
   border-radius: 0.25rem;
   transition: 0.25s;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .project-card-sm {
     height: 16rem;
     width: 100%;
@@ -463,7 +467,7 @@ span:hover:before {
   font-family: "Yeseva One", cursive;
   margin-bottom: 0.5rem;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .project-card-sm h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
@@ -473,7 +477,7 @@ span:hover:before {
   font-size: 1rem;
   font-weight: 100;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .project-card-sm p {
     font-size: 1.4rem;
   }
@@ -506,7 +510,7 @@ span:hover:before {
   margin-left: 0;
   margin-top: 2rem;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .profile-img img {
     width: 22rem;
     height: 22rem;
@@ -543,7 +547,7 @@ span:hover:before {
   margin: 2rem 0;
   width: 100%;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .image-left {
     flex-direction: row;
   }
@@ -574,7 +578,7 @@ span:hover:before {
   margin: 2rem 0;
   width: 100%;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .image-right {
     flex-direction: row;
   }
@@ -626,7 +630,7 @@ span:hover:before {
   display: flex;
   justify-content: space-between;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .icon-wrapper {
     justify-content: space-evenly;
   }
@@ -637,7 +641,7 @@ span:hover:before {
   flex-direction: column;
   width: 50%;
 }
-@media (min-width: 56rem) {
+@media (min-width: 62rem) {
   .icon-column {
     width: 40%;
   }
