@@ -42,33 +42,33 @@
     font-family: 'Yeseva One', cursive;
 }
 
-@mixin image-text-block {
-    display: flex;
-    max-width: $laptop;
-    margin: 2rem auto;
-    border: 2px solid red;
-    img {
-        width: 80%;
-        margin: 0 auto;
-    }
-    div {
-        margin: 2rem 0;
-        width: 100%;
-    }
-    @include tablet {
-        flex-direction: row;
-        img {
-            width: 50%;
-            object-fit: contain;
-            height: 100%;
-        }
-        div {
-            margin: 0;
-            width: 50%;
-            padding: 2rem;
-        }
-    }
-}
+// @mixin image-text-block {
+//     display: flex;
+//     max-width: $laptop;
+//     margin: 2rem auto;
+//     border: 2px solid red;
+//     img {
+//         width: 80%;
+//         margin: 0 auto;
+//     }
+//     div {
+//         margin: 2rem 0;
+//         width: 100%;
+//     }
+//     @include tablet {
+//         flex-direction: row;
+//         img {
+//             width: 50%;
+//             object-fit: contain;
+//             height: 100%;
+//         }
+//         div {
+//             margin: 0;
+//             width: 50%;
+//             padding: 2rem;
+//         }
+//     }
+// }
 
 @mixin card {
     margin-bottom: 1rem;

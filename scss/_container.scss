@@ -70,9 +70,25 @@
     width: 100%;
     margin: 5rem 0;
     box-shadow: 0 15px 35px 0 rgb(0 0 0 / 10%), 0 5px 15px 0 rgb(0 0 0 / 5%);
+    // max-height: 70vh;
     img {
         width: 100%;
         object-fit: cover;
+    }
+    @include desktop {
+        width: 80%;
+        margin: 5rem auto;
+    }
+}
+
+.small {
+    @extend .block-img;
+    @include large-phone {
+        margin: 4rem auto 4rem auto;
+        width: 50%;
+    }
+    @include tablet {
+        width: 60%;
     }
 }
 

@@ -33,15 +33,15 @@
     }
 }
 
-.image-left {
-    @include image-text-block;
-    flex-direction: column-reverse;
-}
+// .image-left {
+//     @include image-text-block;
+//     flex-direction: column-reverse;
+// }
 
-.image-right {
-    @include image-text-block;
-    flex-direction: column;
-}
+// .image-right {
+//     @include image-text-block;
+//     flex-direction: column;
+// }
 
 #zion-hero-img {
     background-image: url("../../assets/images/zion/zion-cover-photo.jpeg");
@@ -50,13 +50,13 @@
 }
 
 #slopes-hero-img {
-    background-image: url("../../assets/images/off-the-slopes.jpg");
+    background-image: url("../../assets/images/off-the-slopes/off-the-slopes.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
 }
 
 #kebf-hero-img {
-    background-image: url("../../assets/images/studio.jpeg");
+    background-image: url("../../assets/images/foundation/studio.jpeg");
     background-repeat: no-repeat;
     background-size: cover;   
 }
