@@ -111,3 +111,38 @@
         @include semibold;
     }
 }
+
+.circle-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.circle-card {
+    text-align: center;
+}
+
+.phase-circle {
+    background-color: $primary-color;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    h2 {
+        line-height: 2.2rem;
+    }
+    @include large-phone {
+        height: 15rem;
+        width: 15rem;
+    }
+}
+
+.phase-footer {
+    margin-top: 1rem;
+    @include light;
+}

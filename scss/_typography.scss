@@ -67,4 +67,36 @@
 
 a {
     color: $font-color;
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+
+
+blockquote::before {
+    content: open-quote;
+  }
+  
+  blockquote::after {
+    content: close-quote;
+  }
+
+blockquote::before, blockquote::after {
+    opacity: 0.25;
+    padding: 0 10px;
+    font-size: 3em;
+  }
+
+
+
+  blockquote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+    font-style: italic;
+    background-color: $quote-color;
+    font-size: 2.4rem;
+    @include thin;
 }

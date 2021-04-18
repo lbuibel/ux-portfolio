@@ -8,10 +8,10 @@ html {
 }
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, p, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -39,8 +39,13 @@ body {
   color: #454545;
 }
 
-ol, ul {
+ol {
   list-style: none;
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: circle;
 }
 
 blockquote, q {
@@ -177,6 +182,43 @@ a:hover, a:visited, a:link, a:active {
 .social-container h2 {
   font-size: 2.4rem;
   font-weight: 600;
+}
+
+.circle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.circle-card {
+  text-align: center;
+}
+
+.phase-circle {
+  background-color: #348BF4;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+.phase-circle h2 {
+  line-height: 2.2rem;
+}
+@media (min-width: 43rem) {
+  .phase-circle {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+
+.phase-footer {
+  margin-top: 1rem;
+  font-weight: 300;
 }
 
 header {
@@ -374,6 +416,34 @@ span:hover:before {
 a {
   color: #454545;
 }
+a:hover {
+  color: #348BF4;
+}
+
+blockquote::before {
+  content: open-quote;
+}
+
+blockquote::after {
+  content: close-quote;
+}
+
+blockquote::before, blockquote::after {
+  opacity: 0.25;
+  padding: 0 10px;
+  font-size: 3em;
+}
+
+blockquote {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+  font-style: italic;
+  background-color: #efeeee;
+  font-size: 2.4rem;
+  font-weight: 100;
+}
 
 .project-card-lg {
   margin-bottom: 1rem;
@@ -530,6 +600,13 @@ a {
   height: 80vh;
   position: relative;
   min-height: 60rem;
+}
+
+@media (min-width: 43rem) {
+  .gif {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 
 .image-left {

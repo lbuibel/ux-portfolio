@@ -26,6 +26,13 @@
     min-height: 60rem;
 }
 
+.gif {
+    @include large-phone {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
 .image-left {
     @include image-text-block;
     flex-direction: column-reverse;
