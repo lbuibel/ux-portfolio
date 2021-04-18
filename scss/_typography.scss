@@ -100,3 +100,12 @@ blockquote::before, blockquote::after {
     font-size: 2.4rem;
     @include thin;
 }
+
+.caption-text {
+    background-color: none;
+    font-style: italic;
+    margin-top: -2.75rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: gray;
+}

@@ -141,17 +141,17 @@ a:hover, a:visited, a:link, a:active {
   }
 }
 
-.block-img, .small {
+.block-img, .medium, .small {
   width: 100%;
   margin: 5rem 0;
   box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1), 0 5px 15px 0 rgba(0, 0, 0, 0.05);
 }
-.block-img img, .small img {
+.block-img img, .medium img, .small img {
   width: 100%;
   object-fit: cover;
 }
 @media (min-width: 106rem) {
-  .block-img, .small {
+  .block-img, .medium, .small {
     width: 80%;
     margin: 5rem auto;
   }
@@ -166,6 +166,18 @@ a:hover, a:visited, a:link, a:active {
 @media (min-width: 62rem) {
   .small {
     width: 60%;
+  }
+}
+
+@media (min-width: 43rem) {
+  .medium {
+    margin: 4rem auto 4rem auto;
+    width: 70%;
+  }
+}
+@media (min-width: 62rem) {
+  .medium {
+    width: 80%;
   }
 }
 
@@ -225,7 +237,14 @@ a:hover, a:visited, a:link, a:active {
   border-radius: 50%;
 }
 .phase-circle h2 {
-  line-height: 2.2rem;
+  font-size: 1.24rem;
+  line-height: 1.5rem;
+}
+@media (min-width: 43rem) {
+  .phase-circle h2 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
 }
 @media (min-width: 43rem) {
   .phase-circle {
@@ -461,6 +480,15 @@ blockquote {
   background-color: #efeeee;
   font-size: 2.4rem;
   font-weight: 100;
+}
+
+.caption-text {
+  background-color: none;
+  font-style: italic;
+  margin-top: -2.75rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: gray;
 }
 
 .project-card-lg {

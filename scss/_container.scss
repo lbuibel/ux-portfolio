@@ -70,7 +70,6 @@
     width: 100%;
     margin: 5rem 0;
     box-shadow: 0 15px 35px 0 rgb(0 0 0 / 10%), 0 5px 15px 0 rgb(0 0 0 / 5%);
-    // max-height: 70vh;
     img {
         width: 100%;
         object-fit: cover;
@@ -89,6 +88,17 @@
     }
     @include tablet {
         width: 60%;
+    }
+}
+
+.medium {
+    @extend .block-img;
+    @include large-phone {
+        margin: 4rem auto 4rem auto;
+        width: 70%;
+    }
+    @include tablet {
+        width: 80%;
     }
 }
 
@@ -150,13 +160,18 @@
     width: 10rem;
     border-radius: 50%;
     h2 {
-        line-height: 2.2rem;
+        font-size: 1.24rem;
+        line-height: 1.5rem;
+        @include large-phone {
+            font-size: 2rem;
+            line-height: 2.2rem;
+        }
     }
     @include large-phone {
         height: 15rem;
         width: 15rem;
+        }
     }
-}
 
 .phase-footer {
     margin-top: 1rem;
