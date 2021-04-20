@@ -144,11 +144,11 @@ a:hover, a:visited, a:link, a:active {
 .block-img, .medium, .small {
   width: 100%;
   margin: 5rem 0;
-  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1), 0 5px 15px 0 rgba(0, 0, 0, 0.05);
 }
 .block-img img, .medium img, .small img {
   width: 100%;
   object-fit: cover;
+  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1), 0 5px 15px 0 rgba(0, 0, 0, 0.05);
 }
 @media (min-width: 106rem) {
   .block-img, .medium, .small {
