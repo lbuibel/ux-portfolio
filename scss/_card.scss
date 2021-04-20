@@ -29,6 +29,17 @@
     color: $font-color;
 }
 
+.project-card-info-sm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    color: $font-color;
+    @include tablet {
+        padding: 2rem;
+    }
+}
+
 .card-wrapper {
     @extend .container-wide;
     // border: 2px solid purple;
@@ -51,7 +62,7 @@
         width: 100%;
     }
     h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         @include decorative-text;
         margin-bottom: .5rem; 
         @include tablet {
@@ -60,7 +71,7 @@
         }
     }
     p {
-        font-size: 1rem;
+        font-size: .8rem;
         @include thin;
         @include tablet {
             font-size: 1.4rem;
