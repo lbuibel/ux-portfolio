@@ -94,11 +94,14 @@ blockquote::before, blockquote::after {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5rem;
+    padding: 2rem;
     font-style: italic;
     background-color: $quote-color;
     font-size: 2.4rem;
     @include thin;
+    @include tablet {
+        padding: 5rem;
+    }
 }
 
 .caption-text {

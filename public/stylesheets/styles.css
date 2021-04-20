@@ -475,11 +475,16 @@ blockquote {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem;
+  padding: 2rem;
   font-style: italic;
   background-color: #efeeee;
   font-size: 2.4rem;
   font-weight: 100;
+}
+@media (min-width: 62rem) {
+  blockquote {
+    padding: 5rem;
+  }
 }
 
 .caption-text {
